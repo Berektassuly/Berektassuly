@@ -29,7 +29,7 @@ I write about architecture patterns and real-world engineering problems at **[be
 ## Stack
 
 ```
-Languages    Rust, TypeScript
+Languages    Rust, TypeScript, Golang
 Backend      Axum, async-trait, tokio
 Blockchain   Solana, Web3
 Frontend     React, WASM
