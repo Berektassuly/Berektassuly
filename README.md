@@ -1,44 +1,66 @@
 # Mukhammedali Berektassuly
 
-Software Engineer from Kazakhstan building systems in Rust. I focus on clean architecture, testability, and solving real problems with pragmatic solutions.
-
-## What I'm Building
-
-**[chatpack](https://github.com/berektassuly/chatpack)** - CLI tool that compresses chat exports for LLM analysis  
-*Rust • 13x token compression • Telegram, WhatsApp, Instagram, Discord support*
-
-```
-chatpack tg result.json -o context.csv
-# 11M tokens → 850K tokens
-```
-
-**[chatpack-web](https://github.com/berektassuly/chatpack-web)** - Browser version via WASM  
-*Files never leave your device • [chatpack.berektassuly.com](https://chatpack.berektassuly.com)*
-
-**[testable-rust-architecture-template](https://github.com/berektassuly/testable-rust-architecture-template)** - Production template for trait-based DI  
-*Axum • async-trait • mockable blockchain/database clients • millisecond tests*
-
-## Writing
-
-I write about architecture patterns and real-world engineering problems at **[berektassuly.com](https://berektassuly.com)**
-
-- [Architecture as LEGO: Building a Testable Rust Service](https://berektassuly.com/architecture-as-lego-rust-testing) - trait-based DI for blockchain abstraction
-- [Solana, PostgreSQL & the Perils of Dual-Writes](https://berektassuly.com/solana-postgresql-dual-write-rust-case-study) - Saga pattern, Outbox, reconciliation
-- [chatpack: 13x Token Compression for Chat Exports](https://berektassuly.com/chatpack-compress-chat-exports-for-llm-rust) - from problem to solution
-
-## Stack
-
-```
-Languages    Rust, TypeScript, Golang
-Backend      Axum, async-trait, tokio
-Blockchain   Solana, Web3
-Frontend     React, WASM
-Patterns     DI, Strategy, Outbox, Event Sourcing
-```
-
-## Contact
+Software Engineer at [airi.chat](https://airi.chat), building GenAI and backend systems in **Rust**, **TypeScript**, and **Solana**.  
+Open-source contributor to **Rust** and **Tokio**. Member of **Solana Superteam KZ**.
 
 [![Email](https://img.shields.io/badge/Email-mukhammedali%40berektassuly.com-blue?style=flat-square)](mailto:mukhammedali@berektassuly.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-berektassuly-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mukhammedali-berektassuly)
 [![Telegram](https://img.shields.io/badge/Telegram-@Berektassuly-26A5E4?style=flat-square&logo=telegram)](https://t.me/Berektassuly)
 [![Blog](https://img.shields.io/badge/Blog-berektassuly.com-FF5722?style=flat-square)](https://berektassuly.com)
+[![Habr](https://img.shields.io/badge/Habr-Berektassuly-65A3BE?style=flat-square&logo=habr)](https://habr.com/ru/users/Berektassuly/)
+
+---
+
+## Highlights
+
+- **Merged PR — [`rust-lang/rust`](https://github.com/rust-lang/rust/pull/157429)**: added a regression test for `unreachable_code` with the try operator
+- **Merged PR — [`tokio-rs/tokio`](https://github.com/tokio-rs/tokio/pull/8202)**: documented runtime interaction with `fork()`
+- **2nd Place — National Solana Hackathon**: built an AI-assisted open-source reward allocation system and a compliance relayer
+- **1st Place — iTechpreneur Battle**: awarded a full Rector's Grant for BSc
+- **Member — Solana Superteam KZ**
+
+---
+
+## Key Projects
+
+### [chatpack](https://github.com/berektassuly/chatpack) · Rust, WASM
+
+High-performance library for compressing chat exports (Telegram, WhatsApp, Instagram, Discord) for LLM/RAG pipelines. Published on [crates.io](https://crates.io/crates/chatpack).
+
+| Metric | Value |
+|---|---|
+| Token reduction | **92% (13×)** — 11M → 850K tokens |
+| Full-pipeline throughput | **~1.6M msgs/sec** (Criterion) |
+| Parser throughput | **~3.3M msgs/sec** (Criterion) |
+
+Browser version via WASM at **[chatpack.berektassuly.com](https://chatpack.berektassuly.com)** — files never leave your device.
+
+**Ecosystem:** [`chatpack-cli`](https://github.com/berektassuly/chatpack-cli) · [`chatpack-web`](https://github.com/berektassuly/chatpack-web) · [`chatpack-python`](https://github.com/berektassuly/chatpack-python)
+
+---
+
+### [testable-rust-architecture-template](https://github.com/berektassuly/testable-rust-architecture-template) · Rust, PostgreSQL
+
+Backend template demonstrating Clean Architecture with Axum and trait-based Dependency Injection.
+
+- **Transactional Outbox** via `FOR UPDATE SKIP LOCKED` for reliable outbox processing
+- Fast test feedback via mock implementations of DB and RPC dependencies
+- Patterns: DI, Strategy, Outbox, Event Sourcing
+
+---
+
+### [solana-compliance-relayer](https://github.com/berektassuly/solana-compliance-relayer) · Rust, Solana
+
+Defense-in-depth payment pipeline integrating Range Protocol API for real-time AML/Sanctions screening before on-chain settlement. Built for the Solana Hackathon alongside [Enshor](https://github.com/berektassuly/fortis) (Go-based AI reward allocation API).
+
+---
+
+## Stack
+
+```
+Rust · TypeScript · Go · Solana · Axum · tokio · PostgreSQL · SQLite · Redis · Docker · WASM
+```
+
+## Writing
+
+Technical posts on architecture patterns and real-world Rust engineering at **[berektassuly.com](https://berektassuly.com)** — covering trait-based DI, Solana dual-write safety (Saga/Outbox), and chatpack internals.
