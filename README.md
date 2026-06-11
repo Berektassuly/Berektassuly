@@ -17,7 +17,6 @@ Open-source contributor to **Rust** and **Tokio**. Member of **Solana Superteam 
 - **Merged PR — [`tokio-rs/tokio`](https://github.com/tokio-rs/tokio/pull/8202)**: documented runtime interaction with `fork()`
 - **2nd Place — National Solana Hackathon**: built an AI-assisted open-source reward allocation system and a compliance relayer
 - **1st Place — iTechpreneur Battle**: awarded a full Rector's Grant for BSc
-- **Member — Solana Superteam KZ**
 
 ---
 
@@ -45,21 +44,17 @@ Backend template demonstrating Clean Architecture with Axum and trait-based Depe
 
 - **Transactional Outbox** via `FOR UPDATE SKIP LOCKED` for reliable outbox processing
 - Fast test feedback via mock implementations of DB and RPC dependencies
-- Patterns: DI, Strategy, Outbox, Event Sourcing
+- Demonstrates dependency injection, outbox processing, and testable service boundaries.
 
 ---
 
 ### [solana-compliance-relayer](https://github.com/berektassuly/solana-compliance-relayer) · Rust, Solana
 
-Defense-in-depth payment pipeline integrating Range Protocol API for real-time AML/Sanctions screening before on-chain settlement. Built for the Solana Hackathon alongside [Enshor](https://github.com/berektassuly/fortis) (Go-based AI reward allocation API).
+Compliance layer for Solana payments: integrates Range Protocol API for real-time AML/sanctions screening before on-chain settlement. Fail-closed architecture, configurable risk thresholds, persistent blocklist caching in Postgres.
+
+Reviewed during development by engineers from QuickNode and Range Protocol.
 
 ---
-
-## Stack
-
-```
-Rust · TypeScript · Go · Solana · Axum · tokio · PostgreSQL · SQLite · Redis · Docker · WASM
-```
 
 ## Writing
 
