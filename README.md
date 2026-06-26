@@ -1,7 +1,7 @@
 # Mukhammedali Berektassuly
 
 Software Engineer at [airi.chat](https://airi.chat), building GenAI and backend systems in **Rust**, **TypeScript**, and **Solana**.  
-Open-source contributor to **Rust** and **Tokio**. Member of **Solana Superteam KZ**.
+Open-source contributor to **Rust**, **Tokio**, **Foundry**, **Wasmtime / Cranelift**, and **Stockfish**. Member of **Solana Superteam KZ**.
 
 [![Email](https://img.shields.io/badge/Email-mukhammedali%40berektassuly.com-blue?style=flat-square)](mailto:mukhammedali@berektassuly.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-berektassuly-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mukhammedali-berektassuly)
@@ -13,8 +13,11 @@ Open-source contributor to **Rust** and **Tokio**. Member of **Solana Superteam 
 
 ## Highlights
 
+- **Merged PR — [`foundry-rs/foundry`](https://github.com/foundry-rs/foundry/pull/15236)**: added `require-revert-in-loop`, a Solidity lint for `require` / `revert` inside loops, with matching [Foundry Book docs](https://github.com/foundry-rs/book/pull/1911)
 - **Merged PR — [`rust-lang/rust`](https://github.com/rust-lang/rust/pull/157429)**: added a regression test for `unreachable_code` with the try operator
+- **Merged PR — [`bytecodealliance/wasmtime`](https://github.com/bytecodealliance/wasmtime/pull/13632)**: fixed a public Cranelift JIT API by re-exporting `JITMemoryKind`
 - **Merged PR — [`tokio-rs/tokio`](https://github.com/tokio-rs/tokio/pull/8202)**: documented runtime interaction with `fork()`
+- **Merged commit — [`official-stockfish/Stockfish`](https://github.com/official-stockfish/Stockfish/commit/8416ccafff69698e2edd99ec08488147f8f37e34)**: cleaned up ARM universal build selection in Makefile / CI
 - **2nd Place — National Solana Hackathon**: built an AI-assisted open-source reward allocation system and a compliance relayer
 - **1st Place — iTechpreneur Battle**: awarded a full Rector's Grant for BSc
 
