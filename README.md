@@ -13,6 +13,7 @@ Open-source contributor to **Rust**, **Tokio**, **Foundry**, **Wasmtime / Cranel
 
 ## Highlights
 
+- **Merged PRs — [`txodds/tx-on-chain`](https://github.com/txodds/tx-on-chain)**: improved TxLINE developer onboarding, mainnet/devnet activation guardrails, API auth/SSE troubleshooting, and on-chain score-validation guidance ([#2](https://github.com/txodds/tx-on-chain/pull/2), [#4](https://github.com/txodds/tx-on-chain/pull/4))
 - **Merged PR — [`foundry-rs/foundry`](https://github.com/foundry-rs/foundry/pull/15236)**: added `require-revert-in-loop`, a Solidity lint for `require` / `revert` inside loops, with matching [Foundry Book docs](https://github.com/foundry-rs/book/pull/1911)
 - **Merged PR — [`rust-lang/rust`](https://github.com/rust-lang/rust/pull/157429)**: added a regression test for `unreachable_code` with the try operator
 - **Merged PR — [`bytecodealliance/wasmtime`](https://github.com/bytecodealliance/wasmtime/pull/13632)**: fixed a public Cranelift JIT API by re-exporting `JITMemoryKind`
